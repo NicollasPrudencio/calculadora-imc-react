@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #177E89;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.mostrarResultado{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ocultarResultado{
+    display: none;
+}
+
+table, tr, td{
+    border: 1px solid #000;
+}
+
+.botao-calcular{
+    height: 30px;
+    width: 100px;
+    color: #FFF;
+    background-color: #323031;
+}
+
+.destaque {
+    background-color: #FFC857;
+    font-weight: bold;
+}
