@@ -3,25 +3,26 @@ import './App.css';
 import Header from './assets/components/header/Header'
 
 function App() {
-    const [altura, setAltura] = useState("");
-    const [peso, setPeso] = useState("");
-    const [imc, setImc] = useState("");
+    const [altura, setAltura] = useState(0);
+    const [peso, setPeso] = useState(0);
+    const [imc, setImc] = useState(0);
 
     function calcularIMC(){
-        console.log(altura);
-        console.log(peso);
+        console.log("altura ", altura);
+        console.log("peso ", peso);
 
-        const imcCalculado = peso / altura;
-        console.log(imcCalculado);
-        setImc(imcCalculado.toFixed(2));
-        console.log(imcCalculado);
+        // setAltura(altura/100);
+        const alturaEmMetros = (altura/100)*2;
+        console.log("altura em metros ", alturaEmMetros);
+        setImc(imc.toFixed(2));
+        console.log("imc ", imc);
     }
 
     return (
         <>
         <Header />
         <div className="campos">
-            <label for="campo-altura">Altura:</label>
+            <label for="campo-altura">Altura (em cm):</label>
             <input
                 id="campo-altura"
                 type="number"
