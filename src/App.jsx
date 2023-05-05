@@ -14,7 +14,9 @@ function App() {
         // setAltura(altura/100);
         const alturaEmMetros = (altura/100)*2;
         console.log("altura em metros ", alturaEmMetros);
-        setImc(imc.toFixed(2));
+        const imcCalculado = peso/alturaEmMetros;
+        setImc(imcCalculado);
+        // setImc(imc.toFixed(2));
         console.log("imc ", imc);
     }
 
